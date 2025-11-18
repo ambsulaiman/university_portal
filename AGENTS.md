@@ -4,7 +4,7 @@
 FastAPI-based University Portal REST API with SQLModel ORM, JWT authentication, and WebAuthn support. Single SQLite database (university.db).
 
 ## Build & Test
-- **Run API**: `uvicorn main:app --reload` (from project root)
+- **Run API**: `fastapi dev --host 0.0.0.0 ./main.py` (from project root)
 - **Dependencies**: FastAPI, SQLModel, pwdlib, python-jose (in venv at ~/user_side/code/fastapi-venv)
 
 ## Architecture
