@@ -20,7 +20,7 @@ export default function DashboardPage() {
   useEffect(() => {
     const fetchDashboard = async () => {
       try {
-        const endpoint = user?.role === 'student' ? '/api/student/dashboard' : '/api/admin/dashboard'
+        const endpoint = user?.role === 'student' ? '/student/dashboard' : '/admin/dashboard'
         const response = await apiClient.get(endpoint)
         setStats(response.data)
       } catch (err) {
