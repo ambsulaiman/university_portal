@@ -40,6 +40,7 @@ class UserIn(UserBase):
 
 class UserOut(UserBase):
     id: UUID
+    role: UserRoles
     enrollments: list['Enrollment'] | None
 
 class UserUpdate(SQLModel):
